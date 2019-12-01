@@ -5,40 +5,375 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>架空の女性支援団体のホームページ</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <div class="header-logo">
+  <div class="container">
+    <header class="row">
+      <h1 class="header-logo col-2">
         <figure class="header-logo__img">
-          ロゴマークはここ
+          <img src="img/logo-sample.png" alt="団体ロゴマーク" class="header-logo__img img-fluid">
         </figure>
-      </div>
+      </h1>
 
-      <div class="header-nav">
+      <div class="header-nav col-10 row justify-content-between">
         <nav class="header-nav__left">
-          <ul>
-            <li class="header-nav__left--list">HOME</li>
-            <li class="header-nav__left--list">ABOUT</li>
-            <li class="header-nav__left--list">EVENT</li>
-            <li class="header-nav__left--list">CONTENT</li>
-            <li class="header-nav__left--list">BLOG</li>
+          <ul class="nav">
+            <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">HOME</a></li>
+            <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">ABOUT</a></li>
+            <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">EVENT</a></li>
+            <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">CONTENT</a></li>
+            <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">BLOG</a></li>
           </ul>
         </nav>
         <nav class="header-nav__right">
-          <ul>
-            <li class="header-nav__right--list">DONATE</li>
-            <li class="header-nav__right--list">CONTACT</li>
+          <ul class="nav">
+            <li class="header-nav__right--list nav-item"><a href="#" class="nav-link">DONATE</a></li>
+            <li class="header-nav__right--list nav-item"><a href="#" class="nav-link">CONTACT</a></li>
           </ul>
         </nav>
       </div>
-    </header>
-    <main>
+      <div id="topSlider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <figure class="carousel-item active">
+              <img src="img/slider_img_1.jpeg" alt="スライドのイメージ" class="w-100">
+              <figcaption class="carousel-caption">
+                母子家庭の輝く笑顔のために
+              </figcaption>
+            </figure>
+            <figure class="carousel-item">
+              <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
+            </figure>
+            <figure class="carousel-item">
+              <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
+            </figure>
+            <figure class="carousel-item">
+              <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
+            </figure>
+            <!-- カルーセルのコントローラー -->
+            <a href="#topSlider" class="carousel-control-prev" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">前に戻る</span>
+            </a>
+            <a href="#topSlider" class="carousel-control-next" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">次へ進む</span>
+            </a>
+            <!-- カルーセルのインジケーター -->
+            <ol class="carousel-indicators">
+              <li id="topSlider" data-slide-to="0" class="active"></li>
+              <li id="topSlider" data-slide-to="1"></li>
+              <li id="topSlider" data-slide-to="2"></li>
+              <li id="topSlider" data-slide-to="3"></li>
+            </ol>
+          </div>
+        </div><!-- end slider -->
+    </header><!-- end header ------------------------------------------------------>
+    <div class="contents row">
+      <main class="col-9">
+        <div class="top-news-container container">
+          <h2 class="h2-header text-center">What's New</h2>
+          <article class="top-news row">
+            <figure class="col-5">
+              <img src="img/mother-and-baby-sunset.jpeg" alt="最新のニュースに関連する写真" class="news__img img-fluid">
+            </figure>
+            <div class="news__right col">
+              <section class="news-box">
+                <h3 class="news-box__header">2020.01.01</h3>
+                <p class="top-box__text">
+                  このタイトルはダミーです。記事のタイトルが２行ぐらいで入るようにしたいです。
+                </p>
+              </section>
+              <section class="news-box">
+                <h3 class="news-box__header">2020.01.01</h3>
+                <p class="top-box__text">
+                  このタイトルはダミーです。記事のタイトルが２行ぐらいで入るようにしたいです。
+                </p>
+              </section>
+              <section class="news-box">
+                <h3 class="news-box__header">2020.01.01</h3>
+                <p class="top-box__text">
+                  このタイトルはダミーです。記事のタイトルが２行ぐらいで入るようにしたいです。
+                </p>
+              </section>
+            </div>
+          </article>
+        </div>
+      
+        <div class="events-container container">
+          <h2 class="h2-header text-center">Events</h2>
+          <div class="events row">
+            <article class="event col">
+              <figure>
+                <img src="img/confirm-promise.jpeg" alt="イベントのイメージ写真" class="event__img img-fluid">
+              </figure>
+              <section class="event__content">
+                <h3 class="event__content__header">
+                  イベント名１
+                </h3>
+                <p class="event__content__text">
+                  ここにイベントの説明が入ります。ここにイベントの説
+                  <span class="read-more">…read more</span>
+                </p>
+              </section>
+            </article>
+            <article class="event col">
+              <figure>
+                <img src="img/mom-child-hug.jpeg" alt="" class="event__img img-fluid">
+              </figure>
+              <section class="event__content">
+                <h3 class="event__content__header">
+                  イベント名１
+                </h3>
+                <p class="event__content__text">
+                  ここにイベントの説明が入ります。ここにイベントの説
+                  <span class="read-more">…read more</span>
+                </p>
+              </section>
+            </article>
+            <article class="event col">
+              <figure>
+                <img src="img/wisteria-trellis_mom_and_child.jpeg" alt="" class="event__img img-fluid">
+              </figure>
+              <section class="event__content">
+                <h3 class="event__content__header">
+                  イベント名１
+                </h3>
+                <p class="event__content__text">
+                  ここにイベントの説明が入ります。ここにイベントの説
+                  <span class="read-more">…read more</span>
+                </p>
+              </section>
+            </article>
+          </div>
+        </div><!-- end events-container -->
 
-    </main>
-    <footer>
+        <div class="aboutus-container">
+          <h2 class="h2-header text-center">About Us</h2>
+          <section class="aboutus text-center">
+            <p class="aboutus__info">
+              ここに貴団体の簡単な説明が入ります。なぜ立ち上げたのか、代表者の思いなど、<br>
+              下の二つのボタンをクリックしたくなるような<br>
+              （もっと貴団体について詳しく知りたくなるような）文章を入れられたらと思います。<br>
+            </p>
+            <div class="aboutus__btn-box">
+              <button class="aboutus__btn-box__btn btn">
+                What We Do <span class="btn__jp">事業一覧</span>
+              </button>
+              <button class="aboutus__btn-box__btn btn">
+                Blog <span class="btn__jp">代表ブログ</span>
+              </button>
+            </div>
+          </section>
+        </div>
 
+        <div class="contactus-container">
+          <h2 class="h2-header text-center">Contact Us</h2>
+          <article class="contactus">
+            <section class="contactus__info">
+                DV・モラハラ被害へのご相談、弊団体への取材・講演依頼、その他のお問い合わせは下記のフォームよりお願いいたします。フォーム送信後、２営業日以内に返信のない場合には、恐れ入りますが050-XXXX-XXXXまでお電話ください。（火・木 9:00~18:00）
+            </section>
+            <div class="contactus__form">
+              <form action="cgi-bin/postsample.cgi" method="post">
+                <div class="radio-box form-group row">
+                  <p class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="purpose" value="0" id="counseling" checked>
+                    <label class="form-check-label" for="counseling">
+                      相談がしたい
+                    </label>
+                  </p>
+                  <p class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="purpose" value="1" id="event">
+                    <label class="form-check-label" for="event">
+                      イベントに参加したい
+                    </label>
+                  </p>
+                  <p class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="purpose" value="2" id="lecture">
+                    <label class="form-check-label" for="lecture">
+                      取材・講演依頼
+                    </label>
+                  </p>
+                  <p class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="purpose" value="3" id="other">
+                    <label class="form-check-label" for="other">
+                      その他のお問い合わせ
+                    </label>
+                  </p>
+                </div>
+                
+                <div class="for-general-purpose">
+                  <p>
+                    <label>Your Name <span>お名前</span><br>
+                      <input type="text" name="name">
+                    </label>
+                  </p>
+                  <p>
+                    <label>E-mail <span>メールアドレス</span><br>
+                      <input type="email" name="email">
+                    </label>
+                  </p>
+                  <p>
+                    <label for="message">Message<span>お問い合わせ内容</span></label><br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="ここにお問い合わせ内容をお書きください"></textarea>
+                  </p>
+                </div>
+                <div class="form-common">
+                  <p>
+                    <input type="checkbox" name="privacy" id="privacy">
+                    <label for="privacy">
+                      弊団体の<a>プライバシーポリシー</a>が適用されます
+                    </label>
+                  </p>
+                  <button type="submit" class="btn">Submit</button>
+                </div>
+              </form>
+            </div>
+          </article>
+        </div>
+
+      </main>
+      <aside class="col-3">
+        <h2 class="h2-header">Information</h2>
+        <nav class="right-nav-container">
+          <ul class="right-nav nav flex-column">
+            <li class="right-nav__list nav-item">
+              <a href="#" class="nav-link">
+                事業一覧
+              </a>
+            </li>
+            <li class="right-nav__list nav-item">
+              <a href="#" class="nav-link">
+                イベント
+              </a>
+            </li>
+            <li class="right-nav__list nav-item">
+              <a href="#" class="nav-link">
+                私たちについて
+              </a>
+            </li>
+            <li class="right-nav__list nav-item">
+              <a href="#" class="nav-link">
+                代表ブログ
+              </a>
+            </li>
+            <li class="right-nav__list nav-item">
+              <a href="#" class="nav-link">
+                ご支援のお願い
+              </a>
+            </li>
+            <li class="right-nav__list nav-item">
+              <a href="#" class="nav-link">
+                お問い合わせ
+              </a>
+            </li>
+            <li class="right-nav__list nav-item">
+              <a href="#" class="nav-link">
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="back-to-top">
+          トップに戻るボタン
+        </div>
+      </aside>
+    </div><!-- end contents -->
+
+    <footer class="footer row">
+      <div class="col-3">
+        <h2 class="footer__header">
+          団体概要
+        </h2>
+        <ul class="footer__nav nav flex-column">
+          <li class="list-item">
+            <a href="#" class="list-link">
+              団体名称はこちら
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">
+              神奈川県＊＊市**区** 1-1-1
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">
+              090-XXXX-XXXX
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="site-map col-6">
+        <h2 class="footer__header">
+          サイトマップ
+        </h2>
+        <div class="site-map__box d-flex">
+          <ul class="footer__nav nav flex-column w-50">
+            <li class="list-item">
+              <a href="#" class="list-link">
+                ホーム
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">
+                最新のお知らせ
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">
+                私たちのしていること
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__nav nav flex-column w-50">
+            <li class="list-item">
+              <a href="#" class="list-link">
+                イベント一覧
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">
+                ご支援のお願い
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">
+                お問い合わせ
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-3">
+        <h2 class="footer__header">
+          連携サイト
+        </h2>
+        <ul class="footer__nav nav flex-column">
+          <li class="list-item">
+            <a href="#" class="list-link">
+              代表ブログ
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">
+              連携サイト１
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">
+              連携サイト２
+            </a>
+          </li>
+        </ul>
+      </div>
+      <small class="w-100 copy text-center">
+        Copyright &copy; 2020 women-support. All Rights Reserved.
+      </small>
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh3U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
