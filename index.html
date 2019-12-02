@@ -8,67 +8,72 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-  <div class="container">
-    <header class="row">
-      <h1 class="header-logo col-2">
-        <figure class="header-logo__img">
-          <img src="img/logo-sample.png" alt="団体ロゴマーク" class="header-logo__img img-fluid">
-        </figure>
-      </h1>
+  <div class="wrapper container-fluid">
+    <header>
+      <div class="row">
+        <h1 class="header-logo col-2">
+          <figure class="header-logo__img">
+            <img src="img/logo-sample.png" alt="団体ロゴマーク" class="header-logo__img img-fluid">
+          </figure>
+        </h1>
 
-      <div class="header-nav col-10 row justify-content-between">
-        <nav class="header-nav__left">
-          <ul class="nav">
-            <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">HOME</a></li>
-            <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">ABOUT</a></li>
-            <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">EVENT</a></li>
-            <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">CONTENT</a></li>
-            <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">BLOG</a></li>
-          </ul>
-        </nav>
-        <nav class="header-nav__right">
-          <ul class="nav">
-            <li class="header-nav__right--list nav-item"><a href="#" class="nav-link">DONATE</a></li>
-            <li class="header-nav__right--list nav-item"><a href="#" class="nav-link">CONTACT</a></li>
-          </ul>
-        </nav>
+        <div class="header-nav col-10 row justify-content-between">
+          <nav class="header-nav__left">
+            <ul class="nav">
+              <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">HOME</a></li>
+              <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">ABOUT</a></li>
+              <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">EVENT</a></li>
+              <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">CONTENT</a></li>
+              <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">BLOG</a></li>
+            </ul>
+          </nav>
+          <nav class="header-nav__right">
+            <ul class="nav">
+              <li class="header-nav__right--list nav-item"><a href="#" class="nav-link">DONATE</a></li>
+              <li class="header-nav__right--list nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div id="topSlider" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <figure class="carousel-item active">
-              <img src="img/slider_img_1.jpeg" alt="スライドのイメージ" class="w-100">
-              <figcaption class="carousel-caption">
-                母子家庭の輝く笑顔のために
-              </figcaption>
-            </figure>
-            <figure class="carousel-item">
-              <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
-            </figure>
-            <figure class="carousel-item">
-              <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
-            </figure>
-            <figure class="carousel-item">
-              <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
-            </figure>
-            <!-- カルーセルのコントローラー -->
-            <a href="#topSlider" class="carousel-control-prev" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">前に戻る</span>
-            </a>
-            <a href="#topSlider" class="carousel-control-next" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">次へ進む</span>
-            </a>
-            <!-- カルーセルのインジケーター -->
-            <ol class="carousel-indicators">
-              <li id="topSlider" data-slide-to="0" class="active"></li>
-              <li id="topSlider" data-slide-to="1"></li>
-              <li id="topSlider" data-slide-to="2"></li>
-              <li id="topSlider" data-slide-to="3"></li>
-            </ol>
-          </div>
-        </div><!-- end slider -->
     </header><!-- end header ------------------------------------------------------>
+
+      <div id="topSlider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <figure class="carousel-item active">
+            <img src="img/slider_img_1.jpeg" alt="スライドのイメージ" class="w-100">
+            <figcaption class="carousel-caption">
+              母子家庭の輝く笑顔のために
+            </figcaption>
+          </figure>
+          <figure class="carousel-item">
+            <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
+          </figure>
+          <figure class="carousel-item">
+            <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
+          </figure>
+          <figure class="carousel-item">
+            <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
+          </figure>
+        </div>
+        <!-- カルーセルのコントローラー -->
+        <a href="#topSlider" class="carousel-control-prev" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">前に戻る</span>
+        </a>
+        <a href="#topSlider" class="carousel-control-next" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">次へ進む</span>
+        </a>
+        <!-- カルーセルのインジケーター -->
+        <ol class="carousel-indicators">
+          <li data-target="#topSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#topSlider" data-slide-to="1"></li>
+          <li data-target="#topSlider" data-slide-to="2"></li>
+          <li data-target="#topSlider" data-slide-to="3"></li>
+        </ol>
+        
+      </div><!-- end slider -->
+    
     <div class="contents row">
       <main class="col-9">
         <div class="top-news-container container">
@@ -372,8 +377,8 @@
       </small>
     </footer>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh3U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
