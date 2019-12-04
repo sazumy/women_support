@@ -7,19 +7,31 @@
   <title>架空の女性支援団体のホームページ</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <!-- adobe fonts --------------- -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'mlt3wwb',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
 </head>
 <body>
 
   <header class="py-4">
     <div class="container">
-      <div class="row">
-        <h1 class="header-logo p-3 col-2">
+      <div class="navbar navbar-expand justify-content-end">
+        <h1 class="header-logo px-4 pt-3 col-2">
           <figure class="header-logo__img">
             <img src="img/logo-sample.png" alt="団体ロゴマーク" class="header-logo__img img-fluid">
           </figure>
         </h1>
 
-        <div class="header-nav col-10 row justify-content-end">
+        <div class="header-nav col-9 row justify-content-between">
           <nav class="header-nav__left">
             <ul class="nav">
               <li class="header-nav__left--list nav-item"><a href="#" class="nav-link">HOME</a></li>
@@ -44,7 +56,7 @@
       <div class="carousel-inner">
         <figure class="carousel-item active">
           <img src="img/slider_img_1.jpeg" alt="スライドのイメージ" class="w-100">
-          <figcaption class="carousel-caption">
+          <figcaption class="klee carousel-caption">
             母子家庭の輝く笑顔のために
           </figcaption>
         </figure>
@@ -80,7 +92,7 @@
   <div class="contents row">
     <main class="col-9">
       <div class="top-news-container container">
-        <h2 class="h2-header text-center">What's New</h2>
+        <h2 class="republic h2-header text-center">What's New</h2>
         <article class="top-news row">
           <figure class="col-5">
             <img src="img/mother-and-baby-sunset.jpeg" alt="最新のニュースに関連する写真" class="news__img img-fluid">
@@ -109,7 +121,7 @@
       </div>
     
       <div class="events-container container">
-        <h2 class="h2-header text-center">Events</h2>
+        <h2 class="republic h2-header text-center">Events</h2>
         <div class="events row">
           <article class="event col">
             <figure>
@@ -157,7 +169,7 @@
       </div><!-- end events-container -->
 
       <div class="aboutus-container">
-        <h2 class="h2-header text-center">About Us</h2>
+        <h2 class="h2-header text-center republic">About Us</h2>
         <section class="aboutus text-center">
           <p class="aboutus__info">
             ここに貴団体の簡単な説明が入ります。なぜ立ち上げたのか、代表者の思いなど、<br>
@@ -242,7 +254,7 @@
 
     </main>
     <aside class="col-3">
-      <h2 class="h2-header">Information</h2>
+      <h2 class="h2-header republic">Information</h2>
       <nav class="right-nav-container">
         <ul class="right-nav nav flex-column">
           <li class="right-nav__list nav-item">

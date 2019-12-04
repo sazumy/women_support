@@ -1,14 +1,43 @@
 body {
-  background-color: #F6F0EB; }
+  background-color: #F6F0EB;
+  color: #5A5A5A;
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 300;
+  font-style: normal; }
 
-.header-logo {
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  background: #fff;
-  max-width: 180px; }
+a:link, a:visited {
+  color: #FFFdFd; }
+
+.klee {
+  color: #5A5A5A;
+  font-family: fot-klee-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal; }
+
+.republic {
+  color: #5A5A5A;
+  font-family: republic-web, serif;
+  font-weight: 400;
+  font-style: normal; }
 
 header {
   background-color: #E6C0BD; }
+  header .header-logo {
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    z-index: 100;
+    background: #fff;
+    max-width: 180px; }
+    header .header-logo::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 100%;
+      height: 0;
+      width: 0;
+      border-left: 5.6rem solid transparent;
+      border-right: 5.6rem solid transparent;
+      border-top: 20px solid #FFFdFd; }
 
 /*# sourceMappingURL=style.css.map */
