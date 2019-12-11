@@ -1,25 +1,55 @@
 body {
   background-color: $pink-lv1;
-  color: $gray-lv5;
+  color: $gray-lv3;
   font-family: source-han-sans-japanese, sans-serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 14px;
 }
 
 a:link, a:visited{
   color: $white;
 }
 
-.klee{
-  color: $gray-lv5;
+@mixin klee{
+  color: $gray-lv3;
   font-family: fot-klee-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tenez-l{
+  font-family: tenez,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.republic{
+  color: $gray-lv3;
+  font-family: republic-web, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin ryumin{
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin han-sans-r{
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin midashi-mi {
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
   font-weight: 600;
   font-style: normal;
 }
 
-.republic{
-  color: $gray-lv5;
-  font-family: republic-web, serif;
-  font-weight: 400;
-  font-style: normal;
+.read-more{
+  color: $pink-lv3;
 }

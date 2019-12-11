@@ -1,24 +1,27 @@
 body {
   background-color: #F6F0EB;
-  color: #5A5A5A;
+  color: #707070;
   font-family: source-han-sans-japanese, sans-serif;
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+  font-size: 14px; }
 
 a:link, a:visited {
   color: #FFFdFd; }
 
-.klee {
-  color: #5A5A5A;
-  font-family: fot-klee-pro, sans-serif;
-  font-weight: 600;
+.tenez-l {
+  font-family: tenez,sans-serif;
+  font-weight: 300;
   font-style: normal; }
 
 .republic {
-  color: #5A5A5A;
+  color: #707070;
   font-family: republic-web, serif;
   font-weight: 400;
   font-style: normal; }
+
+.read-more {
+  color: #CC818A; }
 
 header {
   background-color: #E6C0BD; }
@@ -39,5 +42,38 @@ header {
       border-left: 5.6rem solid transparent;
       border-right: 5.6rem solid transparent;
       border-top: 20px solid #FFFdFd; }
+
+.keyvis-caption {
+  color: #707070;
+  font-family: fot-klee-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: xx-large;
+  background-color: agba(255, 255, 255, 0.75); }
+
+/* main------------------------------------------*/
+main .top-news {
+  background: #FFFdFd; }
+  main .top-news .news__right .news-box__header {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px; }
+main .events-container .events .event__content__header {
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px; }
+main .aboutus-container {
+  background: #FFFdFd;
+  margin: 0 -500px; }
+
+/* aside------------------------------------------*/
+aside .right-nav__list {
+  border-top: solid 1px #707070; }
+  aside .right-nav__list:last-child {
+    border-bottom: solid 1px #707070; }
+  aside .right-nav__list a {
+    color: #707070; }
 
 /*# sourceMappingURL=style.css.map */

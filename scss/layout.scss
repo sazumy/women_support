@@ -22,3 +22,57 @@ header {
     }
   }
 }
+
+.keyvis-caption{
+  @include klee;
+  font-size: xx-large;
+  background-color: $white-hue;
+}
+
+/* main------------------------------------------*/
+main{
+  .top-news{
+    background: $white;
+    .news__right{
+      .news-box{
+        &__header{
+          @include han-sans-r;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .events-container{
+    .events{
+      .event{
+        &__content{
+          &__header{
+            @include midashi-mi;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .aboutus-container{
+    background: $white;
+    margin: 0 -500px;
+  }
+}
+
+/* aside------------------------------------------*/
+aside{
+  .right-nav{
+    &__list{
+      border-top: solid 1px $gray-lv3;
+      &:last-child{
+        border-bottom: solid 1px $gray-lv3;
+      }
+      a{
+        color: $gray-lv3;
+      }
+    }
+  }
+}
