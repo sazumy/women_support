@@ -1,16 +1,17 @@
-body {
-  background-color: $pink-lv1;
-  color: $gray-lv3;
+/*--------------------------------------------------
+fonts
+--------------------------------------------------*/
+@mixin han-sans{
   font-family: source-han-sans-japanese, sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 14px;
 }
 
-a:link, a:visited{
-  color: $white;
+@mixin han-sans-r{
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
-
 
 @mixin klee{ 
   font-family: fot-klee-pro, sans-serif;
@@ -18,12 +19,18 @@ a:link, a:visited{
   font-style: normal;
 }
 
+@mixin midashi-mi {
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+// todo: h2のheader, republicとどちらが良いか検討。republiucになった場合tenezは不要
 .tenez-l{
   font-family: tenez,sans-serif;
   font-weight: 300;
   font-style: normal;
 }
-
 
 @mixin republic{
   font-family: republic-web, serif;
@@ -37,26 +44,9 @@ a:link, a:visited{
   font-style: normal;
 }
 
-@mixin han-sans-r{
-  font-family: source-han-sans-japanese, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-@mixin midashi-mi {
-  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.read-more{
-  color: $pink-lv3;
-}
-
-.h2-header{
-  @include republic;
-  color: $gray-lv3;
-}
+/*--------------------------------------------------
+mixin
+--------------------------------------------------*/
 
 @mixin btn-common{
   background: $pink-lv2;
@@ -80,5 +70,36 @@ a:link, a:visited{
   background: none;
   resize: none;
 }
+
+/*--------------------------------------------------
+要素に共通
+--------------------------------------------------*/
+
+body {
+  background-color: $pink-lv1;
+  color: $gray-lv3;
+  @include han-sans;
+  font-size: 14px;
+}
+
+a:link, a:visited{
+  color: $white;
+}
+
+/*--------------------------------------------------
+汎用クラス
+--------------------------------------------------*/
+.h2-header{
+  @include republic;
+  color: $gray-lv3;
+}
+
+.read-more{
+  color: $pink-lv3;
+}
+
+/*--------------------------------------------------
+その他関数
+--------------------------------------------------*/
 
 $pink-dt-border: dotted 2px $pink-lv3;

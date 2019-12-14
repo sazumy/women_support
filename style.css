@@ -1,3 +1,18 @@
+@charset "UTF-8";
+/*--------------------------------------------------
+fonts
+--------------------------------------------------*/
+.tenez-l {
+  font-family: tenez,sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+
+/*--------------------------------------------------
+mixin
+--------------------------------------------------*/
+/*--------------------------------------------------
+要素に共通
+--------------------------------------------------*/
 body {
   background-color: #F6F0EB;
   color: #707070;
@@ -9,20 +24,21 @@ body {
 a:link, a:visited {
   color: #FFFdFd; }
 
-.tenez-l {
-  font-family: tenez,sans-serif;
-  font-weight: 300;
-  font-style: normal; }
-
-.read-more {
-  color: #CC818A; }
-
+/*--------------------------------------------------
+汎用クラス
+--------------------------------------------------*/
 .h2-header {
   font-family: republic-web, serif;
   font-weight: 400;
   font-style: normal;
   color: #707070; }
 
+.read-more {
+  color: #CC818A; }
+
+/*--------------------------------------------------
+その他関数
+--------------------------------------------------*/
 header {
   background-color: #E6C0BD; }
   header .header-logo {
