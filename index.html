@@ -93,7 +93,7 @@
     <div class="container">
       <div class="row">
         <main class="col-9">
-          <div class="top-news-container pt-4">
+          <div class="top-news-container py-4">
             <h2 class="tenez-l h2-header text-center">What's New</h2>
             <article class="top-news py-4 d-flex">
               <figure class="col">
@@ -122,7 +122,7 @@
             </article>
           </div>
         
-          <div class="events-container container pt-4">
+          <div class="events-container container py-4">
             <h2 class="tenez-l h2-header text-center">Events</h2>
             <div class="events row">
               <article class="event col">
@@ -169,90 +169,6 @@
               </article>
             </div>
           </div><!-- end events-container -->
-
-          <div class="aboutus-container pt-4">
-            <h2 class="h2-header text-center tenez-l">About Us</h2>
-            <section class="aboutus text-center">
-              <p class="aboutus__info">
-                ここに貴団体の簡単な説明が入ります。なぜ立ち上げたのか、代表者の思いなど、<br>
-                下の二つのボタンをクリックしたくなるような<br>
-                （もっと貴団体について詳しく知りたくなるような）文章を入れられたらと思います。<br>
-              </p>
-              <div class="aboutus__btn-box">
-                <button class="aboutus__btn-box__btn btn">
-                  What We Do <span class="btn__jp">事業一覧</span>
-                </button>
-                <button class="aboutus__btn-box__btn btn">
-                  Blog <span class="btn__jp">代表ブログ</span>
-                </button>
-              </div>
-            </section>
-          </div>
-
-          <div class="contactus-container pt-4">
-            <h2 class="h2-header text-center">Contact Us</h2>
-            <article class="contactus">
-              <section class="contactus__info">
-                  DV・モラハラ被害へのご相談、弊団体への取材・講演依頼、その他のお問い合わせは下記のフォームよりお願いいたします。フォーム送信後、２営業日以内に返信のない場合には、恐れ入りますが050-XXXX-XXXXまでお電話ください。（火・木 9:00~18:00）
-              </section>
-              <div class="contactus__form">
-                <form action="cgi-bin/postsample.cgi" method="post">
-                  <div class="radio-box form-group row">
-                    <p class="form-check form-check-inline col">
-                      <input class="form-check-input" type="radio" name="purpose" value="0" id="counseling" checked>
-                      <label class="form-check-label" for="counseling">
-                        相談がしたい
-                      </label>
-                    </p>
-                    <p class="form-check form-check-inline col">
-                      <input class="form-check-input" type="radio" name="purpose" value="1" id="event">
-                      <label class="form-check-label" for="event">
-                        イベントに参加したい
-                      </label>
-                    </p>
-                    <p class="form-check form-check-inline col">
-                      <input class="form-check-input" type="radio" name="purpose" value="2" id="lecture">
-                      <label class="form-check-label" for="lecture">
-                        取材・講演依頼
-                      </label>
-                    </p>
-                    <p class="form-check form-check-inline col">
-                      <input class="form-check-input" type="radio" name="purpose" value="3" id="other">
-                      <label class="form-check-label" for="other">
-                        その他のお問い合わせ
-                      </label>
-                    </p>
-                  </div>
-                  
-                  <div class="for-general-purpose">
-                    <p>
-                      <label>Your Name <span>お名前</span><br>
-                        <input type="text" name="name">
-                      </label>
-                    </p>
-                    <p>
-                      <label>E-mail <span>メールアドレス</span><br>
-                        <input type="email" name="email">
-                      </label>
-                    </p>
-                    <p>
-                      <label for="message">Message<span>お問い合わせ内容</span></label><br>
-                      <textarea name="message" id="message" cols="30" rows="10" placeholder="ここにお問い合わせ内容をお書きください"></textarea>
-                    </p>
-                  </div>
-                  <div class="form-common">
-                    <p>
-                      <input type="checkbox" name="privacy" id="privacy">
-                      <label for="privacy">
-                        弊団体の<a>プライバシーポリシー</a>が適用されます
-                      </label>
-                    </p>
-                    <button type="submit" class="btn">Submit</button>
-                  </div>
-                </form>
-              </div>
-            </article>
-          </div>
 
         </main>
         <aside class="col-3 pt-4 text-center">
@@ -303,96 +219,205 @@
       </div>
     </div>
 
-  <footer class="footer row">
-    <div class="col-3">
-      <h2 class="footer__header">
-        団体概要
-      </h2>
-      <ul class="footer__nav nav flex-column">
-        <li class="list-item">
-          <a href="#" class="list-link">
-            団体名称はこちら
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="list-link">
-            神奈川県＊＊市**区** 1-1-1
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="list-link">
-            090-XXXX-XXXX
-          </a>
-        </li>
-      </ul>
-    </div>
+    <div class="container-fluid">
+      <div class="aboutus-container py-4 row">
+        <div class="aboutus-container__left col-9">
+          <div class="test">
+            <h2 class="h2-header text-center tenez-l">About Us</h2>
+            <section class="aboutus text-center">
+              <p class="aboutus__info">
+                ここに貴団体の簡単な説明が入ります。なぜ立ち上げたのか、代表者の思いなど、<br>
+                下の二つのボタンをクリックしたくなるような<br>
+                （もっと貴団体について詳しく知りたくなるような）文章を入れられたらと思います。<br>
+              </p>
+              <div class="aboutus__btn-box">
+                <button class="aboutus__btn-box__btn btn-common mr-2 btn">
+                  What We Do <span class="btn__jp">事業一覧</span>
+                </button>
+                <button class="aboutus__btn-box__btn btn">
+                  Blog <span class="btn__jp">代表ブログ</span>
+                </button>
+              </div>
+            </section>          
+          </div>  
+        </div>
+      <div class="aboutus-right col-3">
 
-    <div class="site-map col-6">
-      <h2 class="footer__header">
-        サイトマップ
-      </h2>
-      <div class="site-map__box d-flex">
-        <ul class="footer__nav nav flex-column w-50">
-          <li class="list-item">
-            <a href="#" class="list-link">
-              ホーム
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="list-link">
-              最新のお知らせ
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="list-link">
-              私たちのしていること
-            </a>
-          </li>
-        </ul>
-        <ul class="footer__nav nav flex-column w-50">
-          <li class="list-item">
-            <a href="#" class="list-link">
-              イベント一覧
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="list-link">
-              ご支援のお願い
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="list-link">
-              お問い合わせ
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
-    <div class="col-3">
-      <h2 class="footer__header">
-        連携サイト
-      </h2>
-      <ul class="footer__nav nav flex-column">
-        <li class="list-item">
-          <a href="#" class="list-link">
-            代表ブログ
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="list-link">
-            連携サイト１
-          </a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="list-link">
-            連携サイト２
-          </a>
-        </li>
-      </ul>
+
+    <div class="container">
+      <div class="row">
+        <div class="contactus-container col-9 py-5">
+          <h2 class="h2-header text-center tenez-l">Contact Us</h2>
+
+          <!-- フォームの説明文 -->
+          <article class="contactus">
+            <section class="contactus__info py-3">
+              DV・モラハラ被害へのご相談、弊団体への取材・講演依頼、その他のお問い合わせは下記のフォームよりお願いいたします。フォーム送信後、２営業日以内に返信のない場合には、恐れ入りますが050-XXXX-XXXXまでお電話ください。（火・木 9:00~18:00）
+            </section>
+            <div class="contactus__form form-group pt-4">
+
+              <!-- フォームの選択のチェックボックス -->
+              <form action="cgi-bin/postsample.cgi" method="post">
+                <div class="radio-box form-row">
+                  <p class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="purpose" value="0" id="counseling" checked>
+                    <label class="form-check-label" for="counseling">
+                      相談がしたい
+                    </label>
+                  </p>
+                  <p class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="purpose" value="1" id="event">
+                    <label class="form-check-label" for="event">
+                      イベントに参加したい
+                    </label>
+                  </p>
+                  <p class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="purpose" value="2" id="lecture">
+                    <label class="form-check-label" for="lecture">
+                      取材・講演依頼
+                    </label>
+                  </p>
+                  <p class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="purpose" value="3" id="other">
+                    <label class="form-check-label" for="other">
+                      その他のお問い合わせ
+                    </label>
+                  </p>
+                </div>
+              </form>
+
+              <!-- 基本のフォーム -->
+              <form action="cgi-bin/postsample.cgi" method="post" class="">
+                <div class="form-general">
+                  <p class="form-group form-inline w-100">
+                    <label class="label-inline w-100">
+                      Your Name &nbsp;<span class="label__jp">お名前</span>
+                      <input type="text" name="name" class="input-area col">
+                    </label>
+                  </p>
+                  <p class="form-group form-inline">
+                    <label class="label-inline w-100">E-mail &nbsp;<span class="label__jp">メールアドレス</span><br>
+                      <input type="email" name="email" class="input-area col">
+                    </label>
+                  </p>
+                  <p class="form-group">
+                    <label for="message" class="label-block">Message &nbsp;<span class="label__jp">お問い合わせ内容</span></label><br>
+                    <textarea name="message" id="message" class="textarea w-100" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                  </p>
+                </div>
+                <div class="form-common text-center submit-area">
+                  <input type="checkbox" name="privacy" id="privacy">
+                  <label for="privacy">
+                    弊団体の<a>プライバシーポリシー</a>が適用されます
+                  </label>
+                  <p class="form-group">
+                    <button type="submit" class="btn btn__submit col-3">Submit</button>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </article>
+        </div>
+      </div>    
     </div>
-    <small class="w-100 copy text-center">
-      Copyright &copy; 2020 women-support. All Rights Reserved.
-    </small>
+
+  <footer class="footer row py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <h2 class="footer__header">
+            団体概要
+          </h2>
+          <ul class="footer__nav nav flex-column">
+            <li class="list-item">
+              <a href="#" class="list-link">
+                団体名称はこちら
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">
+                神奈川県＊＊市**区** 1-1-1
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">
+                090-XXXX-XXXX
+              </a>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="site-map col-6">
+          <h2 class="footer__header">
+            サイトマップ
+          </h2>
+          <div class="site-map__box d-flex">
+            <ul class="footer__nav nav flex-column w-50">
+              <li class="list-item">
+                <a href="#" class="list-link">
+                  ホーム
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-link">
+                  最新のお知らせ
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-link">
+                  私たちのしていること
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__nav nav flex-column w-50">
+              <li class="list-item">
+                <a href="#" class="list-link">
+                  イベント一覧
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-link">
+                  ご支援のお願い
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-link">
+                  お問い合わせ
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <h2 class="footer__header">
+            連携サイト
+          </h2>
+          <ul class="footer__nav nav flex-column">
+            <li class="list-item">
+              <a href="#" class="list-link">
+                代表ブログ
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">
+                連携サイト１
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">
+                連携サイト２
+              </a>
+            </li>
+          </ul>
+        </div>
+      
+        <small class="w-100 copy text-center pt-4">
+          Copyright &copy; 2020 women-support. All Rights Reserved.
+        </small>
+      </div>
+    </div>
   </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

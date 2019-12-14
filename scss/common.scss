@@ -2,7 +2,7 @@ body {
   background-color: $pink-lv1;
   color: $gray-lv3;
   font-family: source-han-sans-japanese, sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
   font-size: 14px;
 }
@@ -11,8 +11,8 @@ a:link, a:visited{
   color: $white;
 }
 
-@mixin klee{
-  color: $gray-lv3;
+
+@mixin klee{ 
   font-family: fot-klee-pro, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -25,8 +25,7 @@ a:link, a:visited{
 }
 
 
-.republic{
-  color: $gray-lv3;
+@mixin republic{
   font-family: republic-web, serif;
   font-weight: 400;
   font-style: normal;
@@ -53,3 +52,33 @@ a:link, a:visited{
 .read-more{
   color: $pink-lv3;
 }
+
+.h2-header{
+  @include republic;
+  color: $gray-lv3;
+}
+
+@mixin btn-common{
+  background: $pink-lv2;
+  color:$white;
+  @include republic;
+  .btn__jp{
+    @include klee;
+  }
+}
+
+@mixin label-common{
+  @include republic;
+  .label__jp{
+    @include klee;
+  }
+}
+
+@mixin form-reset {
+  border: none;
+  outline:none;
+  background: none;
+  resize: none;
+}
+
+$pink-dt-border: dotted 2px $pink-lv3;

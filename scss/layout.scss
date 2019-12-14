@@ -21,10 +21,14 @@ header {
     border-top: 20px solid $white;
     }
   }
+  .header-nav{
+    font-size: 1rem;
+  }
 }
 
 .keyvis-caption{
   @include klee;
+  color: $gray-lv3;
   font-size: xx-large;
   background-color: $white-hue;
 }
@@ -54,25 +58,83 @@ main{
         }
       }
     }
-  }
-
-  .aboutus-container{
-    background: $white;
-    margin: 0 -500px;
-  }
+  }  
 }
 
 /* aside------------------------------------------*/
 aside{
   .right-nav{
     &__list{
-      border-top: solid 1px $gray-lv3;
+      border-top: solid 1px $gray-lv2;
       &:last-child{
-        border-bottom: solid 1px $gray-lv3;
+        border-bottom: solid 1px $gray-lv2;
       }
       a{
         color: $gray-lv3;
       }
     }
+  }
+}
+
+/* aboutus contact------------------------------------------*/
+
+.aboutus-container{
+  background-color: $white;
+  background-image: url(img/flower-bouket.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+
+  &__left{
+    .test{
+      margin-top: 5rem;
+      .aboutus{
+        height: 250px;
+        &__btn-box{
+          margin-top: 2rem;
+          &__btn{
+            @include btn-common;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contactus-container{
+  .contactus{
+    &__form{
+      .label-inline{
+        @include label-common;
+        border-bottom: $pink-dt-border;
+        .input-area{
+          @include form-reset;
+        }
+      }
+      .label-block{
+        @include label-common;
+      }
+      .textarea{
+        @include form-reset;
+        border: $pink-dt-border;
+      }
+      .submit-area{
+        .btn__submit{
+          @include btn-common;
+          background: $pink-lv3;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+/* aboutus contact------------------------------------------*/
+.footer{
+  background-color: $pink-lv2;
+  &__header{
+    font-size: 1rem;
+    color: $white;
+    @include han-sans-r;
   }
 }

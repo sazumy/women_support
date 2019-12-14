@@ -2,7 +2,7 @@ body {
   background-color: #F6F0EB;
   color: #707070;
   font-family: source-han-sans-japanese, sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
   font-size: 14px; }
 
@@ -14,14 +14,14 @@ a:link, a:visited {
   font-weight: 300;
   font-style: normal; }
 
-.republic {
-  color: #707070;
-  font-family: republic-web, serif;
-  font-weight: 400;
-  font-style: normal; }
-
 .read-more {
   color: #CC818A; }
+
+.h2-header {
+  font-family: republic-web, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #707070; }
 
 header {
   background-color: #E6C0BD; }
@@ -42,12 +42,14 @@ header {
       border-left: 5.6rem solid transparent;
       border-right: 5.6rem solid transparent;
       border-top: 20px solid #FFFdFd; }
+  header .header-nav {
+    font-size: 1rem; }
 
 .keyvis-caption {
-  color: #707070;
   font-family: fot-klee-pro, sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #707070;
   font-size: xx-large;
   background-color: agba(255, 255, 255, 0.75); }
 
@@ -64,16 +66,88 @@ main .events-container .events .event__content__header {
   font-weight: 600;
   font-style: normal;
   font-size: 18px; }
-main .aboutus-container {
-  background: #FFFdFd;
-  margin: 0 -500px; }
 
 /* aside------------------------------------------*/
 aside .right-nav__list {
-  border-top: solid 1px #707070; }
+  border-top: solid 1px #CCCCCC; }
   aside .right-nav__list:last-child {
-    border-bottom: solid 1px #707070; }
+    border-bottom: solid 1px #CCCCCC; }
   aside .right-nav__list a {
     color: #707070; }
+
+/* aboutus contact------------------------------------------*/
+.aboutus-container {
+  background-color: #FFFdFd;
+  background-image: url(img/flower-bouket.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain; }
+  .aboutus-container__left .test {
+    margin-top: 5rem; }
+    .aboutus-container__left .test .aboutus {
+      height: 250px; }
+      .aboutus-container__left .test .aboutus__btn-box {
+        margin-top: 2rem; }
+        .aboutus-container__left .test .aboutus__btn-box__btn {
+          background: #E6C0BD;
+          color: #FFFdFd;
+          font-family: republic-web, serif;
+          font-weight: 400;
+          font-style: normal; }
+          .aboutus-container__left .test .aboutus__btn-box__btn .btn__jp {
+            font-family: fot-klee-pro, sans-serif;
+            font-weight: 500;
+            font-style: normal; }
+
+.contactus-container .contactus__form .label-inline {
+  font-family: republic-web, serif;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom: dotted 2px #CC818A; }
+  .contactus-container .contactus__form .label-inline .label__jp {
+    font-family: fot-klee-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal; }
+  .contactus-container .contactus__form .label-inline .input-area {
+    border: none;
+    outline: none;
+    background: none;
+    resize: none; }
+.contactus-container .contactus__form .label-block {
+  font-family: republic-web, serif;
+  font-weight: 400;
+  font-style: normal; }
+  .contactus-container .contactus__form .label-block .label__jp {
+    font-family: fot-klee-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal; }
+.contactus-container .contactus__form .textarea {
+  border: none;
+  outline: none;
+  background: none;
+  resize: none;
+  border: dotted 2px #CC818A; }
+.contactus-container .contactus__form .submit-area .btn__submit {
+  background: #E6C0BD;
+  color: #FFFdFd;
+  font-family: republic-web, serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #CC818A;
+  border-radius: 0; }
+  .contactus-container .contactus__form .submit-area .btn__submit .btn__jp {
+    font-family: fot-klee-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal; }
+
+/* aboutus contact------------------------------------------*/
+.footer {
+  background-color: #E6C0BD; }
+  .footer__header {
+    font-size: 1rem;
+    color: #FFFdFd;
+    font-family: source-han-sans-japanese, sans-serif;
+    font-weight: 500;
+    font-style: normal; }
 
 /*# sourceMappingURL=style.css.map */
