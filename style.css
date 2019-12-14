@@ -166,4 +166,17 @@ aside .right-nav__list {
     font-weight: 500;
     font-style: normal; }
 
+.back-to-top {
+  width: 100px;
+  height: 100px;
+  display: none;
+  position: fixed;
+  bottom: 300px;
+  right: 100px; }
+  .back-to-top__icon {
+    font-size: 5rem;
+    color: #CC818A;
+    font-style: normal;
+    font-weight: 200; }
+
 /*# sourceMappingURL=style.css.map */
