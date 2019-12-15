@@ -47,7 +47,7 @@ header {
     left: 0;
     z-index: 100;
     background: #fff;
-    max-width: 180px; }
+    width: 100px; }
     header .header-logo::after {
       content: '';
       position: absolute;
@@ -55,8 +55,8 @@ header {
       top: 100%;
       height: 0;
       width: 0;
-      border-left: 5.6rem solid transparent;
-      border-right: 5.6rem solid transparent;
+      border-left: 3.1rem solid transparent;
+      border-right: 3.1rem solid transparent;
       border-top: 20px solid #FFFdFd; }
   header .header-nav {
     font-size: 1rem;
@@ -97,8 +97,8 @@ aside .right-nav__list {
   background-color: #FFFdFd;
   background-image: url(img/flower-bouket.png);
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain; }
+  background-position: right bottom;
+  background-size: cover; }
   .aboutus-container__left .test {
     margin-top: 5rem; }
     .aboutus-container__left .test .aboutus {
@@ -180,14 +180,43 @@ aside .right-nav__list {
   height: 100px;
   display: none;
   position: fixed;
-  bottom: 300px;
-  right: 100px; }
+  bottom: 50px;
+  right: -20px; }
   .back-to-top__icon {
     font-size: 5rem;
     color: #CC818A;
     font-style: normal;
     font-weight: 200; }
 
+/* mediaquery------------------------------------------*/
+@media screen and (min-width: 992px) {
+  header .header-logo {
+    width: auto;
+    max-width: 180px; }
+    header .header-logo::after {
+      border-left: 5.6rem solid transparent;
+      border-right: 5.6rem solid transparent;
+      border-top: 20px solid #FFFdFd; }
+
+  .back-to-top {
+    width: 100px;
+    height: 100px;
+    display: none;
+    position: fixed;
+    bottom: 300px;
+    right: 100px; }
+    .back-to-top__icon {
+      font-size: 5rem;
+      color: #CC818A;
+      font-style: normal;
+      font-weight: 200; } }
+@media screen and (min-width: 576px) {
+  .aboutus-container {
+    background-size: contain; }
+
+  .back-to-top {
+    bottom: 150px;
+    right: 50px; } }
 /*------------------------------------------
   フォームのタブ切り替え
 -------------------------------------------*/
