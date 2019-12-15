@@ -26,9 +26,9 @@ fonts
 }
 
 // todo: h2のheader, republicとどちらが良いか検討。republiucになった場合tenezは不要
-.tenez-l{
+@mixin tenez-r{
   font-family: tenez,sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -50,6 +50,7 @@ mixin
 
 @mixin btn-common{
   background: $pink-lv2;
+  border-radius: 0px;
   color:$white;
   @include republic;
   .btn__jp{

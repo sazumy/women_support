@@ -2,11 +2,6 @@
 /*--------------------------------------------------
 fonts
 --------------------------------------------------*/
-.tenez-l {
-  font-family: tenez,sans-serif;
-  font-weight: 300;
-  font-style: normal; }
-
 /*--------------------------------------------------
 mixin
 --------------------------------------------------*/
@@ -45,7 +40,7 @@ header {
     position: absolute;
     top: -1.5rem;
     left: 0;
-    z-index: 100;
+    z-index: 1;
     background: #fff;
     width: 100px; }
     header .header-logo::after {
@@ -73,7 +68,7 @@ header {
   font-style: normal;
   color: #707070;
   font-size: 1rem;
-  background-color: agba(255, 255, 255, 0.75); }
+  background-color: rgba(255, 255, 255, 0.8); }
 
 /* main------------------------------------------*/
 main .top-news {
@@ -90,6 +85,33 @@ main .events-container .events .event__content__header {
   font-size: 18px; }
 
 /* aside------------------------------------------*/
+aside .sp-right-nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 350px;
+  z-index: 30;
+  color: #CC818A;
+  font-size: 1.6rem; }
+  aside .sp-right-nav__list {
+    font-family: tenez,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: solid 1px #CC818A; }
+  aside .sp-right-nav .btn__donate {
+    background: #E6C0BD;
+    border-radius: 0px;
+    color: #FFFdFd;
+    font-family: republic-web, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem; }
+    aside .sp-right-nav .btn__donate .btn__jp {
+      font-family: fot-klee-pro, sans-serif;
+      font-weight: 500;
+      font-style: normal; }
 aside .right-nav__list {
   border-top: solid 1px #CCCCCC; }
   aside .right-nav__list:last-child {
@@ -114,6 +136,7 @@ aside .right-nav__list {
         margin-top: 2rem; }
         .aboutus-container__left .test .aboutus__btn-box__btn {
           background: #E6C0BD;
+          border-radius: 0px;
           color: #FFFdFd;
           font-family: republic-web, serif;
           font-weight: 400;
@@ -155,6 +178,7 @@ aside .right-nav__list {
   border: dotted 2px #CC818A; }
 .contactus-container .contactus__form .submit-area .btn__submit {
   background: #E6C0BD;
+  border-radius: 0px;
   color: #FFFdFd;
   font-family: republic-web, serif;
   font-weight: 400;

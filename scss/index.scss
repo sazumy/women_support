@@ -5,7 +5,7 @@ header {
     position: absolute;
     top:-1.5rem;
     left: 0;
-    z-index: 100;
+    z-index: 1;
     background: #fff;
     width: 100px;
   
@@ -71,6 +71,25 @@ main{
 
 /* aside------------------------------------------*/
 aside{
+  .sp-right-nav{
+    background-color: $white-hue;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 350px;
+    z-index: 30;
+    color: $pink-lv3;
+    font-size: 1.6rem;  
+    &__list{
+      @include tenez-r;
+      border-bottom: solid 1px $pink-lv3;
+    }
+    .btn__donate{
+      @include btn-common;
+      font-size: 1.6rem;
+    }
+  }
   .right-nav{
     &__list{
       border-top: solid 1px $gray-lv2;
