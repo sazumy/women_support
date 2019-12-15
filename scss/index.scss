@@ -36,9 +36,12 @@ header {
 
 .keyvis-caption{
   @include klee;
+  background: radial-gradient($white-shadow,transparent);
+  background: -moz-radial-gradient($white-shadow,transparent);
+  background: -webkit-radial-gradient($white-shadow,transparent);
   color: $gray-lv3;
   font-size: 1rem;
-  background-color: $white-hue;
+  padding: 0;
 }
 
 /* main------------------------------------------*/
