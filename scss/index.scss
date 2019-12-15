@@ -75,12 +75,13 @@ aside{
     background-color: $white-hue;
     height: 100%;
     position: fixed;
-    right: 0;
+    right: -350px;
     top: 0;
     width: 350px;
     z-index: 30;
     color: $pink-lv3;
-    font-size: 1.6rem;  
+    font-size: 1.6rem;
+    transition:.4s ease-in-out;
     &__list{
       @include tenez-r;
       border-bottom: solid 1px $pink-lv3;
@@ -89,6 +90,10 @@ aside{
       @include btn-common;
       font-size: 1.6rem;
     }
+  }
+  .open{
+    right: 0px;
+    transition:.4s ease-in-out;
   }
   .right-nav{
     &__list{
