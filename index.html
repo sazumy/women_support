@@ -258,7 +258,7 @@
             <section class="contactus__info py-3">
               DV・モラハラ被害へのご相談、弊団体への取材・講演依頼、その他のお問い合わせは下記のフォームよりお願いいたします。フォーム送信後、２営業日以内に返信のない場合には、恐れ入りますが050-XXXX-XXXXまでお電話ください。（火・木 9:00~18:00）
             </section>
-            <div class="contactus__form form-group pt-4">
+            <div id="form-tabs" class="contactus__form form-group pt-4">
 
               <!-- フォームの選択のチェックボックス -->
               <form action="cgi-bin/postsample.cgi" method="post">
@@ -266,32 +266,32 @@
                   <p class="form-check form-check-inline col">
                     <input class="form-check-input" type="radio" name="purpose" value="0" id="counseling" checked>
                     <label class="form-check-label" for="counseling">
-                      相談がしたい
+                      <a href="#form1">相談がしたい</a>
                     </label>
                   </p>
                   <p class="form-check form-check-inline col">
                     <input class="form-check-input" type="radio" name="purpose" value="1" id="event">
                     <label class="form-check-label" for="event">
-                      イベントに参加したい
+                      <a href="#form2">イベントに参加したい</a>
                     </label>
                   </p>
                   <p class="form-check form-check-inline col">
                     <input class="form-check-input" type="radio" name="purpose" value="2" id="lecture">
                     <label class="form-check-label" for="lecture">
-                      取材・講演依頼
+                      <a href="#form3">取材・講演依頼</a>
                     </label>
                   </p>
                   <p class="form-check form-check-inline col">
                     <input class="form-check-input" type="radio" name="purpose" value="3" id="other">
                     <label class="form-check-label" for="other">
-                      その他のお問い合わせ
+                      <a href="#form4">その他のお問い合わせ</a>
                     </label>
                   </p>
                 </div>
               </form>
 
               <!-- 基本のフォーム -->
-              <form action="cgi-bin/postsample.cgi" method="post" class="">
+              <form action="cgi-bin/postsample.cgi" method="post" id="form1" class="form-panel active">
                 <div class="form-general">
                   <p class="form-group form-inline w-100">
                     <label class="label-inline w-100">
@@ -309,6 +309,7 @@
                     <textarea name="message" id="message" class="textarea w-100" cols="30" rows="10" placeholder="Your Message..."></textarea>
                   </p>
                 </div>
+                <!-- 全フォーム共通の要素 -->
                 <div class="form-common text-center submit-area">
                   <input type="checkbox" name="privacy" id="privacy">
                   <label for="privacy">
@@ -319,8 +320,54 @@
                   </p>
                 </div>
               </form>
-            </div>
+
+              <!-- Form 2 -->
+              <div id="form2" class="form-panel">
+                ここに２つ目のフォームの内容が入ります
+                <!-- 全フォーム共通の要素 -->
+                <div class="form-common text-center submit-area">
+                  <input type="checkbox" name="privacy" id="privacy">
+                  <label for="privacy">
+                    弊団体の<a>プライバシーポリシー</a>が適用されます
+                  </label>
+                  <p class="form-group">
+                    <button type="submit" class="btn btn__submit col-3">Submit</button>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Form 3 -->
+              <div id="form3" class="form-panel">
+                ここに3つ目のフォームの内容が入ります
+                <!-- 全フォーム共通の要素 -->
+                <div class="form-common text-center submit-area">
+                  <input type="checkbox" name="privacy" id="privacy">
+                  <label for="privacy">
+                    弊団体の<a>プライバシーポリシー</a>が適用されます
+                  </label>
+                  <p class="form-group">
+                    <button type="submit" class="btn btn__submit col-3">Submit</button>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Form 4 -->
+              <div id="form4" class="form-panel">
+                ここに4つ目のフォームの内容が入ります
+                <!-- 全フォーム共通の要素 -->
+                <div class="form-common text-center submit-area">
+                  <input type="checkbox" name="privacy" id="privacy">
+                  <label for="privacy">
+                    弊団体の<a>プライバシーポリシー</a>が適用されます
+                  </label>
+                  <p class="form-group">
+                    <button type="submit" class="btn btn__submit col-3">Submit</button>
+                  </p>
+                </div>
+              </div>
+            </div><!-- end contactus__form -->
           </article>
+          
         </div>
       </div>    
     </div>

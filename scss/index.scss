@@ -23,6 +23,7 @@ header {
   }
   .header-nav{
     font-size: 1rem;
+    color: $white;
   }
 }
 
@@ -104,6 +105,15 @@ aside{
 .contactus-container{
   .contactus{
     &__form{
+      .radio-box{
+        .form-check-label{
+          a{
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+      }
       .label-inline{
         @include label-common;
         border-bottom: $pink-dt-border;
@@ -125,6 +135,9 @@ aside{
           border-radius: 0;
         }
       }
+      .form-tab{
+        height: 400px;
+      }
     }
   }
 }
@@ -132,6 +145,7 @@ aside{
 /* aboutus contact------------------------------------------*/
 .footer{
   background-color: $pink-lv2;
+  color:$white;
   &__header{
     font-size: 1rem;
     color: $white;

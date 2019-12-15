@@ -22,7 +22,7 @@ body {
   font-size: 14px; }
 
 a:link, a:visited {
-  color: #FFFdFd; }
+  color: inherit; }
 
 /*--------------------------------------------------
 汎用クラス
@@ -59,7 +59,8 @@ header {
       border-right: 5.6rem solid transparent;
       border-top: 20px solid #FFFdFd; }
   header .header-nav {
-    font-size: 1rem; }
+    font-size: 1rem;
+    color: #FFFdFd; }
 
 .keyvis-caption {
   font-family: fot-klee-pro, sans-serif;
@@ -115,6 +116,8 @@ aside .right-nav__list {
             font-weight: 500;
             font-style: normal; }
 
+.contactus-container .contactus__form .radio-box .form-check-label a:hover {
+  text-decoration: none; }
 .contactus-container .contactus__form .label-inline {
   font-family: republic-web, serif;
   font-weight: 400;
@@ -155,10 +158,13 @@ aside .right-nav__list {
     font-family: fot-klee-pro, sans-serif;
     font-weight: 500;
     font-style: normal; }
+.contactus-container .contactus__form .form-tab {
+  height: 400px; }
 
 /* aboutus contact------------------------------------------*/
 .footer {
-  background-color: #E6C0BD; }
+  background-color: #E6C0BD;
+  color: #FFFdFd; }
   .footer__header {
     font-size: 1rem;
     color: #FFFdFd;
@@ -166,6 +172,9 @@ aside .right-nav__list {
     font-weight: 500;
     font-style: normal; }
 
+/*------------------------------------------
+  トップに戻るボタン
+-------------------------------------------*/
 .back-to-top {
   width: 100px;
   height: 100px;
@@ -178,5 +187,15 @@ aside .right-nav__list {
     color: #CC818A;
     font-style: normal;
     font-weight: 200; }
+
+/*------------------------------------------
+  フォームのタブ切り替え
+-------------------------------------------*/
+.form-panel {
+  display: none;
+  min-height: 300px; }
+
+.active {
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
