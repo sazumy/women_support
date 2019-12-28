@@ -1,3 +1,5 @@
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   entry: './app/src/bundle.js',
@@ -8,5 +10,16 @@ module.exports = {
   devServer:{
     contentBase: './app'
   },
-  devtool: 'eval-source-map'
+  devtool: 'eval-source-map',
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({ use: 'css-loader' })
+      }
+    ]
+  },
+  plugins: [
+    new ExtractTextPlugin('style.css'),
+  ]  
 };
