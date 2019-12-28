@@ -1,12 +1,12 @@
 module.exports = {
   mode: 'development',
-  entry: './src/bundle.js',
+  entry: './app/src/bundle.js',
   output: {
-    path: `${__dirname}/dist`,
+    path: `${__dirname}/app`,
     filename: 'main.js'
   },
   devServer:{
-    contentBase: './dist'
+    contentBase: './app'
   },
   devtool: 'eval-source-map'
 };
