@@ -16,15 +16,23 @@ module.exports = {
   devtool: 'eval-source-map',
   module: {
     rules: [
-      // css-loaderの設定
+      // css/sass-loaderの設定
       {
-        test: /\.css$/,
+        test: /\.(scss|css)$/,
         use: [
           'style-loader',
           {
             loader: 'css-loader',
             options: {
               url: false
+            }
+          },
+          // Sassをバンドルするための機能
+          {
+            loader: "sass-loader",
+            options: {
+              // ソースマップの利用有無
+              sourceMap: true
             }
           }
         ]
