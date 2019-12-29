@@ -1,31 +1,31 @@
-header {
+.header {
   background-color: $pink-lv2;
 
   .header-logo {
-    position: absolute;
-    top:-1.5rem;
-    left: 0;
-    z-index: 1;
     background: #fff;
+    left: 0;
+    position: absolute;
+    top: -1.5rem;
     width: 100px;
+    z-index: 1;
   
     &::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 100%;
-    height: 0;
-    width: 0;
-    border-left: 3.1rem solid transparent;
-    border-right: 3.1rem solid transparent;
-    border-top: 20px solid $white;
+      border-left: 3.1rem solid transparent;
+      border-right: 3.1rem solid transparent;
+      border-top: 20px solid $white;
+      content: '';
+      height: 0;
+      left: 0;
+      position: absolute;
+      top: 100%;
+      width: 0;
+      }
     }
-  }
-  .header-nav{
-    font-size: 1.2rem;
+  .header-nav {
     color: $white;
+    font-size: 1.2rem;
   }
-  .sp-header-nav{
+  .sp-header-nav {
     color: $white;
     font-size: 2rem;
     &__item{
@@ -34,7 +34,7 @@ header {
   }
 }
 
-.keyvis-caption{
+.keyvis-caption {
   @include klee;
   background: radial-gradient($white-shadow,transparent);
   background: -moz-radial-gradient($white-shadow,transparent);
@@ -45,11 +45,11 @@ header {
 }
 
 /* main------------------------------------------*/
-main{
-  .top-news{
+.main {
+  .top-news {
     background: $white;
-    .news__right{
-      .news-box{
+    .news__right {
+      .news-box {
         &__header{
           @include han-sans-r;
           font-size: 16px;
@@ -58,11 +58,11 @@ main{
     }
   }
 
-  .events-container{
-    .events{
-      .event{
-        &__content{
-          &__header{
+  .events-container {
+    .events {
+      .event {
+        &__content {
+          &__header {
             @include midashi-mi;
             font-size: 18px;
           }
@@ -73,40 +73,64 @@ main{
 }
 
 /* aside------------------------------------------*/
-aside{
-  .sp-right-nav{
+.aside {
+  .sp-right-nav {
     background-color: $white-hue;
+    color: $pink-lv3;
     height: 100%;
     position: fixed;
     right: -350px;
     top: 0;
+    font-size: 1.6rem;
+    transition: .4s ease-in-out;
     width: 350px;
     z-index: 30;
-    color: $pink-lv3;
-    font-size: 1.6rem;
-    transition:.4s ease-in-out;
+
+    .nav-close-btn{
+      float: right;
+      position: relative;
+      height: 36px;
+      width: 40px;
+
+      &__bar{
+        background-color: $pink-lv3;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        &:nth-of-type(1){
+          top: 0;
+          transform: rotate(45deg);
+        }
+        &:nth-of-type(2){
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    .nav-list-box{
+      clear: both;
+    }
     &__list{
       @include tenez-r;
       border-bottom: solid 1px $pink-lv3;
     }
-    .btn__donate{
+    .btn__donate {
       @include btn-common;
       font-size: 1.6rem;
     }
   }
-  .open{
+  .open {
     right: 0px;
-    transition:.4s ease-in-out;
+    transition: .4s ease-in-out;
   }
-  .right-nav{
+  .right-nav {
     &__list{
-      border-top: solid 1px $gray-lv2;
-      &:last-child{
-        border-bottom: solid 1px $gray-lv2;
+      border-top: $border-gray-solid;
+      &:last-child {
+        border-bottom: $border-gray-solid;
       }
-      a{
+      .nav-link {
         color: $gray-lv3;
-        .fa-facebook{
+        .fa-facebook {
           font-size: 2rem;
 
         }
@@ -117,14 +141,15 @@ aside{
 
 /* aboutus contact------------------------------------------*/
 
-.aboutus-container{
+.aboutus-container {
   background-color: $white;
   background-image: url(img/flower-bouket.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: cover;
 
-  &__left{
+  &__left {
+    background-color: $mask;
     .test{
       margin-top: 5rem;
       .aboutus{
@@ -138,42 +163,37 @@ aside{
       }
     }
   }
+
+  &__right {
+    background-color: $mask;
+  }
 }
 
-.contactus-container{
-  .contactus{
-    &__form{
-      .radio-box{
-        .form-check-label{
-          a{
-            &:hover{
-              text-decoration: none;
-            }
-          }
-        }
-      }
-      .label-inline{
+.contactus-container {
+  .contactus {
+    &__form {
+      .label-inline {
         @include label-common;
-        border-bottom: $pink-dt-border;
-        .input-area{
+        border-bottom: $border-pink-dotted;
+        .input-area {
           @include form-reset;
         }
       }
-      .label-block{
+      .label-block {
         @include label-common;
       }
-      .textarea{
+      .textarea {
         @include form-reset;
-        border: $pink-dt-border;
+        border: $border-pink-dotted;
       }
-      .submit-area{
-        .btn__submit{
+      .submit-area {
+        .btn__submit {
           @include btn-common;
           background: $pink-lv3;
           border-radius: 0;
         }
       }
-      .form-tab{
+      .form-tab {
         height: 400px;
       }
     }
@@ -181,51 +201,48 @@ aside{
 }
 
 /* aboutus contact------------------------------------------*/
-.footer{
+.footer {
   background-color: $pink-lv2;
   color:$white;
-  &__header{
-    font-size: 1rem;
-    color: $white;
+  &__header {
     @include han-sans-r;
+    color: $white;
+    font-size: 1rem;
   }
 }
 
 /* トップに戻るボタン -------------------------------------------*/
-.back-to-top{
-  width: 100px;
-  height: 100px;
+.back-to-top {
+  border-left: $border-pink-solid-tick;
+  border-top: $border-pink-solid-tick;
   display: none;
+  height: 40px;
   position: fixed;
-  bottom: 50px;
-  right: -20px;
-  &__icon{
-   font-size: 5rem;
-   color: $pink-lv3;
-   font-style: normal;
-   font-weight: 200;
-  }
+    bottom: 50px;
+    right: 40px;
+  transform: rotate(45deg);
+  width: 40px;
 }
 
 /* ハンバーガーメニュー -------------------------------------------*/
 
 .menu-trigger,
 .menu-trigger span {
+  box-sizing: border-box;
   display: inline-block;
   transition: all .4s;
-  box-sizing: border-box;
 }
 .menu-trigger {
+  height: 24px;
   position: relative;
   width: 30px;
-  height: 24px;
 }
 .menu-trigger span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
   background-color: #fff;
+  height: 2px;
+  position: absolute;
+    left: 0;
+  width: 100%;
 }
 .menu-trigger span:nth-of-type(1) {
   top: 0;
@@ -240,7 +257,7 @@ aside{
 /* mediaquery------------------------------------------*/
 // lgサイズ以上
 @media screen and (min-width: 992px){
-  header{
+  .header{
     .header-logo {
       width: auto;
       max-width: 180px;
@@ -252,20 +269,13 @@ aside{
       }
     }
   }
-
   .back-to-top{
-    width: 100px;
-    height: 100px;
     display: none;
+    height: 80px;
     position: fixed;
-    bottom: 300px;
-    right: 100px;
-    &__icon{
-     font-size: 5rem;
-     color: $pink-lv3;
-     font-style: normal;
-     font-weight: 200;
-    }
+      bottom: 300px;
+      right: 50px;
+    width: 80px;
   }
   
 
@@ -278,9 +288,4 @@ aside{
   .aboutus-container{
     background-size:contain ;
   }
-  .back-to-top{
-    bottom: 150px;
-    right: 50px;
-  }
-
 }

@@ -24,7 +24,7 @@
 </head>
 <body>
 
-  <header class="py-lg-4">
+  <header class="header py-lg-4">
     <div class="container">
       <div class="navbar justify-content-end">
         <h1 class="header-logo px-4 pt-5 pt-md-3">
@@ -109,7 +109,7 @@
   
     <div class="container">
       <div class="row">
-        <main class="col col-lg-9">
+        <main class="main col col-lg-9">
           <div class="top-news-container py-4">
             <h2 class="tenez-l h2-header text-center">What's New</h2>
             <article class="top-news py-4 d-sm-flex">
@@ -188,11 +188,14 @@
           </div><!-- end events-container -->
 
         </main>
-        <aside class="col-0 col-lg-3 pt-4 text-center">
+
+        <aside class="aside col-0 col-lg-3 pt-4 text-center">
           <div class="sp-right-nav px-4 pt-1">
-            <div id="nav-close-btn" class="right-nav__btn text-right">
-              <i class="fas fa-times"></i>
+            <div id="nav-close-btn" class="nav-close-btn mt-4 mr-2">
+              <span class="nav-close-btn__bar"></span>
+              <span class="nav-close-btn__bar"></span>
             </div>
+            <div class="nav-list-box">
             <nav class="d-lg-none pt-4">
               <ul class="nav flex-column">
                 <li class="sp-right-nav__list nav-item"><a href="#" class="nav-link">HOME</a></li>
@@ -210,6 +213,7 @@
                 </button>
               </ul>
             </nav>
+          </div>
           </div>
           
           <div class="w-100 d-none d-lg-block">
@@ -259,7 +263,7 @@
     </div>
 
     <div class="container-fluid">
-      <div class="aboutus-container py-sm-4 row">
+      <div class="aboutus-container row">
         <div class="aboutus-container__left col col-lg-9">
           <div class="test">
             <h2 class="h2-header text-center tenez-l">About Us</h2>
@@ -280,7 +284,7 @@
             </section>          
           </div>  
         </div>
-        <div class="aboutus-right d-none d-lg-block col-3">
+        <div class="aboutus-container__right d-none d-lg-block col-3">
 
         </div>
       </div>
@@ -300,26 +304,26 @@
 
               <!-- フォームの選択のチェックボックス -->
               <form action="cgi-bin/postsample.cgi" method="post">
-                <div class="radio-box form-row">
-                  <p class="form-check form-check-inline col">
+                <div class="radio-box pl-3 pb-3">
+                  <p class="form-check col">
                     <input class="form-check-input" type="radio" name="purpose" value="0" id="counseling" checked>
                     <label class="form-check-label" for="counseling">
                       <a href="#form1">相談がしたい</a>
                     </label>
                   </p>
-                  <p class="form-check form-check-inline col">
+                  <p class="form-check col">
                     <input class="form-check-input" type="radio" name="purpose" value="1" id="event">
                     <label class="form-check-label" for="event">
                       <a href="#form2">イベントに参加したい</a>
                     </label>
                   </p>
-                  <p class="form-check form-check-inline col">
+                  <p class="form-check col">
                     <input class="form-check-input" type="radio" name="purpose" value="2" id="lecture">
                     <label class="form-check-label" for="lecture">
                       <a href="#form3">取材・講演依頼</a>
                     </label>
                   </p>
-                  <p class="form-check form-check-inline col">
+                  <p class="form-check col">
                     <input class="form-check-input" type="radio" name="purpose" value="3" id="other">
                     <label class="form-check-label" for="other">
                       <a href="#form4">その他のお問い合わせ</a>
@@ -411,7 +415,6 @@
     </div>
 
     <div id="back-to-top" class="back-to-top">
-      <i class="back-to-top__icon">^</i>
       <p class="sr-only">トップに戻るボタン</p>
     </div>
 
