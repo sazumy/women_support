@@ -1,4 +1,5 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
@@ -16,13 +17,32 @@ module.exports = {
   devtool: 'eval-source-map',
   module: {
     rules: [
+      // css/sass-loaderの設定
       {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({ use: 'css-loader' })
+        test: /\.(scss|css)$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
+          // Sassをバンドルするための機能
+          {
+            loader: "sass-loader",
+            options: {
+              // ソースマップの利用有無
+              sourceMap: true
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('style.css'),
-  ]  
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    }),
+  ]
 };
