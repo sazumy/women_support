@@ -25,6 +25,13 @@ fonts
   font-style: normal;
 }
 
+// カテゴリーの表示
+@mixin tenez-l-italic {
+  font-family: tenez, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
 // todo: h2のheader, republicとどちらが良いか検討。republiucになった場合tenezは不要
 @mixin tenez-r{
   font-family: tenez,sans-serif;
@@ -58,18 +65,30 @@ mixin
   }
 }
 
-@mixin label-common{
-  @include republic;
-  .label__jp{
-    @include klee;
-  }
-}
-
 @mixin form-reset {
   border: none;
   outline:none;
   background: none;
   resize: none;
+}
+
+@mixin h3-header {
+  @include republic;
+  color: $gray-lv3;
+}
+
+@mixin keyvis-caption {
+  @include republic;
+  .jp {
+    @include klee;
+  }
+}
+
+@mixin label-common{
+  @include republic;
+  .label__jp{
+    @include klee;
+  }
 }
 
 /*--------------------------------------------------
@@ -91,11 +110,51 @@ a:link, a:visited, a:hover{
 /*--------------------------------------------------
 汎用クラス
 --------------------------------------------------*/
-.h2-header{
+
+.category {
+  @include tenez-l-italic;
+  font-size: .8rem;
+  .jp {
+    @include klee;
+    color: $pink-lv3;
+  }
+}
+
+.h2-header {
   @include republic;
   color: $gray-lv3;
 }
 
-.read-more{
+.keyvis {
+  position: relative;
+  &__img {
+    height: auto;
+    min-width: 766px;
+  }
+  &__caption {
+    @include keyvis-caption;
+    color: $white;
+    position: absolute;
+      bottom: 30%;
+  }
+}
+
+.pagination {
+  color: $pink-lv2;
+  .page-item.active .page-link {
+    background-color: $pink-lv2;
+    border: $border-pink2-solid-2px;
+  }
+  &__link {
+    background-color: none;
+    border: $border-pink2-solid-2px;
+  }
+  &__previous, &__next {
+    background: none;
+    border: none;
+  }
+}
+
+.read-more {
   color: $pink-lv3;
 }

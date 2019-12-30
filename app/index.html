@@ -9,8 +9,10 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<!-- body----------------------------------------------------------------->
+<body>
+  <!-- header------------------------------------------------------------>
   <header class="header py-lg-4">
     <div class="container">
       <div class="navbar justify-content-end">
@@ -54,50 +56,54 @@
         </div>        
       </div>
     </div>
-  </header><!-- end header ------------------------------------------------------>
+  </header>
+  <!-- end header ------------------------------------------------------>
 
-    <div id="topSlider" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <figure class="carousel-item active">
-          <img src="img/slider_img_1.jpeg" alt="スライドのイメージ" class="w-100">
-          <figcaption class="carousel-caption keyvis-caption">
-            母子家庭の輝く笑顔のために
-          </figcaption>
-        </figure>
-        <figure class="carousel-item">
-          <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
-        </figure>
-        <figure class="carousel-item">
-          <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
-        </figure>
-        <figure class="carousel-item">
-          <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
-        </figure>
-      </div>
-      <!-- カルーセルのコントローラー -->
-      <a href="#topSlider" class="carousel-control-prev" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">前に戻る</span>
-      </a>
-      <a href="#topSlider" class="carousel-control-next" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">次へ進む</span>
-      </a>
-      <!-- カルーセルのインジケーター -->
-      <ol class="carousel-indicators">
-        <li data-target="#topSlider" data-slide-to="0" class="active"></li>
-        <li data-target="#topSlider" data-slide-to="1"></li>
-        <li data-target="#topSlider" data-slide-to="2"></li>
-        <li data-target="#topSlider" data-slide-to="3"></li>
-      </ol>
-      
-    </div><!-- end slider -->
-  
+  <!-- top slider--------------------------------------------------------->
+  <div id="topSlider" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <figure class="carousel-item active">
+        <img src="img/slider_img_1.jpeg" alt="スライドのイメージ" class="w-100">
+        <figcaption class="carousel-caption keyvis-caption">
+          母子家庭の輝く笑顔のために
+        </figcaption>
+      </figure>
+      <figure class="carousel-item">
+        <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
+      </figure>
+      <figure class="carousel-item">
+        <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
+      </figure>
+      <figure class="carousel-item">
+        <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
+      </figure>
+    </div>
+    <!-- カルーセルのコントローラー -->
+    <a href="#topSlider" class="carousel-control-prev" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">前に戻る</span>
+    </a>
+    <a href="#topSlider" class="carousel-control-next" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">次へ進む</span>
+    </a>
+    <!-- カルーセルのインジケーター -->
+    <ol class="carousel-indicators">
+      <li data-target="#topSlider" data-slide-to="0" class="active"></li>
+      <li data-target="#topSlider" data-slide-to="1"></li>
+      <li data-target="#topSlider" data-slide-to="2"></li>
+      <li data-target="#topSlider" data-slide-to="3"></li>
+    </ol>
+    
+  </div>
+  <!-- end top slider ----------------------------------------------------->
   
     <div class="container">
       <div class="row">
+      
+        <!-- main --------------------------------------------------------->
         <main class="main col col-lg-9">
-          <div class="top-news-container py-4">
+          <div class="py-4">
             <h2 class="tenez-l h2-header text-center">What's New</h2>
             <article class="top-news py-4 d-sm-flex">
               <figure class="col">
@@ -175,7 +181,9 @@
           </div><!-- end events-container -->
 
         </main>
+        <!-- end main --------------------------------------------------------->
 
+        <!-- aside --------------------------------------------------------->
         <aside class="aside col-0 col-lg-3 pt-4 text-center">
           <div class="sp-right-nav px-4 pt-1">
             <div id="nav-close-btn" class="nav-close-btn mt-4 mr-2">
@@ -246,6 +254,7 @@
             </nav>
           </div>
         </aside>
+        <!-- end aside --------------------------------------------------------->
       </div>
     </div>
 
@@ -279,6 +288,8 @@
 
     <div class="container">
       <div class="row">
+
+        <!-- form --------------------------------------------------------->
         <div class="contactus-container col col-lg-9 py-5">
           <h2 class="h2-header text-center tenez-l">Contact Us</h2>
 
@@ -398,13 +409,19 @@
           </article>
           
         </div>
+
+        <!-- end form --------------------------------------------------------->
+
       </div>    
     </div>
 
+    <!-- back-to-top button --------------------------------------------------------->
     <div id="back-to-top" class="back-to-top">
       <p class="sr-only">トップに戻るボタン</p>
     </div>
+    <!-- end back-to-top button --------------------------------------------------------->
 
+    <!-- footer --------------------------------------------------------->
   <footer class="footer py-5">
     <div class="container">
       <div class="row">
@@ -510,5 +527,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="./main.js"></script>
+
+<!-- end footer --------------------------------------------------------->
 </body>
 </html>
