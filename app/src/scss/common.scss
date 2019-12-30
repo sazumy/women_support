@@ -72,6 +72,11 @@ mixin
   resize: none;
 }
 
+@mixin h3-header {
+  @include republic;
+  color: $gray-lv3;
+}
+
 @mixin keyvis-caption {
   @include republic;
   .jp {
@@ -107,8 +112,10 @@ a:link, a:visited, a:hover{
 --------------------------------------------------*/
 .category {
   @include tenez-l-italic;
+  font-size: .8rem;
   .jp {
     @include klee;
+    color: $pink-lv3;
   }
 }
 
@@ -128,6 +135,22 @@ a:link, a:visited, a:hover{
     color: $white;
     position: absolute;
       bottom: 30%;
+  }
+}
+
+.pagination {
+  color: $pink-lv2;
+  .page-item.active .page-link {
+    background-color: $pink-lv2;
+    border: $border-pink2-solid-2px;
+  }
+  &__link {
+    background-color: none;
+    border: $border-pink2-solid-2px;
+  }
+  &__previous, &__next {
+    background: none;
+    border: none;
   }
 }
 

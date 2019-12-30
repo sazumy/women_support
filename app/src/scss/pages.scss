@@ -10,3 +10,14 @@
     }
   }
 }
+
+//　事業一覧
+.activity {
+  background-color: none;
+  &__img {
+    margin: 0;
+  }
+  &__title {
+    @include h3-header;
+  }
+}
