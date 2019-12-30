@@ -1,0 +1,12 @@
+// 事業一覧などの目次
+.index {
+  border-bottom: $border-pink-dotted-tick;
+  border-top: $border-pink-dotted-tick;
+  &__item {
+    list-style-type: none;
+    &:before{
+      color: $pink-lv3;
+      content: '●';
+    }
+  }
+}

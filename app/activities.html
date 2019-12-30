@@ -60,41 +60,9 @@
   <!-- end header ------------------------------------------------------>
 
   <!-- top slider--------------------------------------------------------->
-  <div id="topSlider" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <figure class="carousel-item active">
-        <img src="img/slider_img_1.jpeg" alt="スライドのイメージ" class="w-100">
-        <figcaption class="carousel-caption keyvis-caption">
-          母子家庭の輝く笑顔のために
-        </figcaption>
-      </figure>
-      <figure class="carousel-item">
-        <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
-      </figure>
-      <figure class="carousel-item">
-        <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
-      </figure>
-      <figure class="carousel-item">
-        <img src="https://placehold.jp/1366x512.png" alt="スライドのイメージ" class="w-100">
-      </figure>
-    </div>
-    <!-- カルーセルのコントローラー -->
-    <a href="#topSlider" class="carousel-control-prev" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">前に戻る</span>
-    </a>
-    <a href="#topSlider" class="carousel-control-next" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">次へ進む</span>
-    </a>
-    <!-- カルーセルのインジケーター -->
-    <ol class="carousel-indicators">
-      <li data-target="#topSlider" data-slide-to="0" class="active"></li>
-      <li data-target="#topSlider" data-slide-to="1"></li>
-      <li data-target="#topSlider" data-slide-to="2"></li>
-      <li data-target="#topSlider" data-slide-to="3"></li>
-    </ol>
-    
+  <div class="keyvis row no-gutters text-center">
+    <img src="img/kvs_foodbank.png" class="keyvis__img img-fluid" alt="事業のイメージ画像">
+    <h2 class="keyvis__caption w-100">What We Do <span class="jp">事業一覧</span></h2>
   </div>
   <!-- end top slider ----------------------------------------------------->
   
@@ -103,83 +71,152 @@
       
         <!-- main --------------------------------------------------------->
         <main class="main col col-lg-9">
-          <div class="top-news-container py-4">
-            <h2 class="tenez-l h2-header text-center">What's New</h2>
-            <article class="top-news py-4 d-sm-flex">
-              <figure class="col">
-                <img src="img/mother-and-baby-sunset.jpeg" alt="最新のニュースに関連する写真" class="news__img img-fluid">
-              </figure>
-              <div class="news__right col">
-                <section class="news-box">
-                  <h3 class="news-box__header">2020.01.01</h3>
-                  <p class="top-box__text">
-                    このタイトルはダミーです。記事のタイトルが２行ぐらいで入るようにしたいです。
-                  </p>
-                </section>
-                <section class="news-box">
-                  <h3 class="news-box__header">2020.01.01</h3>
-                  <p class="top-box__text">
-                    このタイトルはダミーです。記事のタイトルが２行ぐらいで入るようにしたいです。
-                  </p>
-                </section>
-                <section class="news-box">
-                  <h3 class="news-box__header">2020.01.01</h3>
-                  <p class="top-box__text">
-                    このタイトルはダミーです。記事のタイトルが２行ぐらいで入るようにしたいです。
-                  </p>
-                </section>
-              </div>
-            </article>
-          </div>
-        
-          <div class="events-container container py-4">
-            <h2 class="tenez-l h2-header text-center">Events</h2>
-            <div class="events row">
-              <article class="event d-block col-sm">
-                <figure>
-                  <img src="img/confirm-promise.jpeg" alt="イベントのイメージ写真" class="event__img img-fluid">
-                </figure>
-                <section class="event__content">
-                  <h3 class="event__content__header text-center">
-                    イベント名１
-                  </h3>
-                  <p class="event__content__text">
-                    ここにイベントの説明が入ります。ここにイベントの説
-                    <span class="read-more">…read more</span>
-                  </p>
-                </section>
-              </article>
-              <article class="event d-block col-sm">
-                <figure>
-                  <img src="img/mom-child-hug.jpeg" alt="" class="event__img img-fluid w-100">
-                </figure>
-                <section class="event__content">
-                  <h3 class="event__content__header text-center">
-                    イベント名１
-                  </h3>
-                  <p class="event__content__text">
-                    ここにイベントの説明が入ります。ここにイベントの説
-                    <span class="read-more">…read more</span>
-                  </p>
-                </section>
-              </article>
-              <article class="event d-block col-sm">
-                <figure>
-                  <img src="img/wisteria-trellis_mom_and_child.jpeg" alt="" class="event__img img-fluid w-100">
-                </figure>
-                <section class="event__content">
-                  <h3 class="event__content__header text-center">
-                    イベント名１
-                  </h3>
-                  <p class="event__content__text">
-                    ここにイベントの説明が入ります。ここにイベントの説
-                    <span class="read-more">…read more</span>
-                  </p>
-                </section>
-              </article>
-            </div>
-          </div><!-- end events-container -->
+          <article class="py-4">
+            <h2 class="tenez-l h2-header text-center">What We Do</h2>
+            <section class="lead-msg py-4">
+              <p class="text-center">母子家庭のために、地域のために<br>私たちがしている事を紹介しますのような<br>リード文が２〜３行入ると良いです</p>
+            </section>
 
+            <nav class="d-sm-none d-flex justify-content-center">
+              <ul class="index py-3">
+                <li class="index__item">
+                  <a href="#" class="index__item__link">
+                    母子家庭の支援事業
+                  </a>
+                </li>
+                <li class="index__item">
+                  <a href="#" class="index__item__link">
+                    DV・虐待・モラハラ被害者支援
+                  </a>
+                </li>
+                <li class="index__item">
+                  <a href="#" class="index__item__link">
+                    代表的な事業を４つ入れます
+                  </a>
+                </li>
+                <li class="index__item">
+                  <a href="#" class="index__item__link">
+                    目立たせたくないものは入れない
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="activities-container card-columns mt-4 mt-sm-0">
+              <section class="activitiy card">
+                <figure class="activity__img">
+                  <img src="./img/activity_01.png" alt="海辺の親子のイメージ" class="card-img-top">
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title activitiy__title">主要な事業１</h3>
+                  <p class="category">
+                    Category:&nbsp;<span class="jp">親子向け, 子ども向け, 地域向け</span>
+                  </p>
+                  <p class="card-text activity__text">
+                    ここに事業の説明が入ります。ここに事業の説明が入ります&nbsp;
+                    <span class="read-more">…read more</span>
+                  </p>
+                </div>
+              </section>
+
+              <section class="activitiy card">
+                <figure class="activity__img">
+                  <img src="./img/activity_02.png" alt="海辺の親子のイメージ" class="card-img-top">
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title activitiy__title">主要な事業２</h3>
+                  <p class="category">
+                    Category:&nbsp;<span class="jp">親子向け, 子ども向け, 地域向け</span>
+                  </p>
+                  <p class="card-text activity__text">
+                    ここに事業の説明が入ります。ここに事業の説明が入ります&nbsp;
+                    <span class="read-more">…read more</span>
+                  </p>
+                </div>
+              </section>
+
+              <section class="activitiy card">
+                <figure class="activity__img">
+                  <img src="./img/activity_03.png" alt="海辺の親子のイメージ" class="card-img-top">
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title activitiy__title">主要な事業３</h3>
+                  <p class="category">
+                    Category:&nbsp;<span class="jp">親子向け, 子ども向け, 地域向け</span>
+                  </p>
+                  <p class="card-text activity__text">
+                    ここに事業の説明が入ります。ここに事業の説明が入ります&nbsp;
+                    <span class="read-more">…read more</span>
+                  </p>
+                </div>
+              </section>
+
+              <section class="activitiy card">
+                <figure class="activity__img">
+                  <img src="./img/activity_04.png" alt="海辺の親子のイメージ" class="card-img-top">
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title activitiy__title">主要な事業４</h3>
+                  <p class="category">
+                    Category:&nbsp;<span class="jp">親子向け, 子ども向け, 地域向け</span>
+                  </p>
+                  <p class="card-text activity__text">
+                    ここに事業の説明が入ります。ここに事業の説明が入ります&nbsp;
+                    <span class="read-more">…read more</span>
+                  </p>
+                </div>
+              </section>
+
+              <section class="activitiy card d-none d-sm-block">
+                <figure class="activity__img">
+                  <img src="./img/activity_05.png" alt="海辺の親子のイメージ" class="card-img-top">
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title activitiy__title">サブ事業１</h3>
+                  <p class="category">
+                    Category:&nbsp;<span class="jp">親子向け, 子ども向け, 地域向け</span>
+                  </p>
+                  <p class="card-text activity__text">
+                    ここに事業の説明が入ります。ここに事業の説明が入ります&nbsp;
+                    <span class="read-more">…read more</span>
+                  </p>
+                </div>
+              </section>
+
+              <section class="activitiy card d-none d-sm-block">
+                <figure class="activity__img">
+                  <img src="./img/activity_06.png" alt="海辺の親子のイメージ" class="card-img-top">
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title activitiy__title">サブ事業</h3>
+                  <p class="category">
+                    Category:&nbsp;<span class="jp">親子向け, 子ども向け, 地域向け</span>
+                  </p>
+                  <p class="card-text activity__text">
+                    ここに事業の説明が入ります。ここに事業の説明が入ります&nbsp;
+                    <span class="read-more">…read more</span>
+                  </p>
+                </div>
+              </section>
+            </div>
+          </article>
+
+          <nav aria-label="Page navigation col-sm-6">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </main>
         <!-- end main --------------------------------------------------------->
 

@@ -32,6 +32,9 @@ a:link, a:visited, a:hover {
 .read-more {
   color: #CC818A; }
 
+.keyvis__img {
+  min-height: 232px; }
+
 .header {
   background-color: #E6C0BD; }
   .header .header-logo {
