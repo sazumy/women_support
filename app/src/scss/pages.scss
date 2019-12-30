@@ -12,13 +12,17 @@
 }
 
 // 事業一覧
-.activity {
+.activity-card {
   background-color: none;
   &__img {
     height: 187px;
     margin: 0;
     overflow: hidden;
     position: relative;
+    img {
+      height: 100%;
+      width: auto;
+    }
   }
   &__title {
     @include h3-header;
