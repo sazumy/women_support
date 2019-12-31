@@ -12,16 +12,20 @@
 }
 
 // 事業一覧
-.activity {
+.activity-card {
   background-color: none;
   &__img {
     height: 187px;
     margin: 0;
     overflow: hidden;
     position: relative;
+    img {
+      height: 100%;
+      width: auto;
+    }
   }
   &__title {
-    @include h3-header;
+    @include title-header;
   }
 }
 
@@ -41,5 +45,38 @@
       top: 50%;
       left: 50%;
     transform: translate(-50%, -60%);
+  }
+}
+
+// 各事業
+.activity {
+  &__title {
+    @include title-header;
+    border-bottom: $border-pink-dotted-tick;
+  }
+
+  &__img {
+    max-height: 446px;
+    overflow: hidden;
+  }
+
+  &__intro {
+    &__title {
+      @include title-header;
+      // todo: h4のヘッダー（見出し３）のCSSを要検討
+    }
+    &__quote {
+      background-color: $white;
+      position: relative;
+      &::before {
+        color: $pink-lv2;
+        content: '\f10d';
+        font-family: "Font Awesome 5 Free";
+        font-size: 3rem;
+        position: absolute;
+          left: -10px;
+          top: -20px;
+      }
+    }
   }
 }

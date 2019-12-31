@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var $activityImg = $('.activity__img'),
+  var $activityImg = $('.activity-card__img'),
       $cardReadMore = $('.card-read-more'),
       duration = 100,
       easing = 'linear';
