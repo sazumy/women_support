@@ -72,7 +72,7 @@ mixin
   resize: none;
 }
 
-@mixin h3-header {
+@mixin title-header {
   @include republic;
   color: $gray-lv3;
 }
