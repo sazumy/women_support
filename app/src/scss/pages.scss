@@ -70,9 +70,12 @@
       position: relative;
       &::before {
         color: $pink-lv2;
-        content: '"';
+        content: '\f10d';
+        font-family: "Font Awesome 5 Free";
         font-size: 3rem;
         position: absolute;
+          left: -10px;
+          top: -20px;
       }
     }
   }
